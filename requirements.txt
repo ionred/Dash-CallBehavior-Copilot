@@ -1,0 +1,21 @@
+# Web Framework
+dash>=2.14.0
+dash-bootstrap-components>=1.5.0
+flask>=3.0.0
+
+# ASGI Server
+uvicorn[standard]>=0.24.0
+
+# Database
+pyodbc>=5.0.0
+
+# Data Processing
+pandas>=2.1.0
+numpy>=1.24.0
+
+# Caching
+cachelib>=0.10.0
+redis>=5.0.0
+
+# Utilities
+python-dotenv>=1.0.0

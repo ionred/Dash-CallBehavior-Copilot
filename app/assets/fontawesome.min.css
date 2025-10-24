@@ -1,0 +1,74 @@
+/*!
+ * Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Minimal version for offline use with essential icons
+ */
+
+.fa, .fas, .far, .fal, .fad, .fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa, .fas {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
+
+/* Sync/Refresh Icon */
+.fa-sync-alt:before, .fa-rotate:before {
+  content: "⟳";
+  font-size: 1.2em;
+}
+
+/* Check Circle Icon */
+.fa-check-circle:before {
+  content: "✓";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1em;
+}
+
+/* Exclamation Circle Icon */
+.fa-exclamation-circle:before {
+  content: "!";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+/* Icon sizing */
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+/* Icon colors - using inline styles is preferred but these are fallbacks */
+.text-success { color: #198754; }
+.text-danger { color: #dc3545; }
+.text-warning { color: #ffc107; }
+.text-info { color: #0dcaf0; }
+.text-primary { color: #0d6efd; }
+.text-secondary { color: #6c757d; }
