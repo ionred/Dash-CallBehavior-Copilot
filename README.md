@@ -13,6 +13,7 @@ A Flask/Dash application for monitoring and analyzing call behavior data associa
 - **Caching**: FileSystem and Redis caching support for improved performance
 - **Concurrent User Support**: Thread-safe operations with proper locking
 - **Transaction Management**: Rollback support for failed operations
+- **Offline Ready**: All CSS and styling assets are local - no external CDN dependencies required
 
 ## Requirements
 
@@ -21,6 +22,7 @@ A Flask/Dash application for monitoring and analyzing call behavior data associa
 - Access to the following databases:
   - Server A1: MyLocalData (eventListings, eventAccounts, memberResearch)
   - Server B2: GenesysDB (callHistory), TempDB (temporary tables)
+- **No internet access required** - all assets are bundled locally
 
 ## Installation
 
@@ -155,6 +157,9 @@ Dash-CallBehavior-Copilot/
 ├── app/
 │   ├── __init__.py
 │   ├── main.py              # Main Dash application
+│   ├── assets/              # Local CSS and styling (no external CDN)
+│   │   ├── bootstrap.min.css
+│   │   └── fontawesome.min.css
 │   ├── components/          # UI components and callbacks
 │   │   ├── __init__.py
 │   │   ├── layout.py        # Main layout
@@ -175,7 +180,7 @@ Dash-CallBehavior-Copilot/
 ├── config/
 │   ├── __init__.py
 │   └── settings.py          # Configuration management
-├── static/                  # Static assets
+├── static/                  # Static assets (legacy)
 │   ├── css/
 │   └── js/
 ├── cache/                   # FileSystem cache directory

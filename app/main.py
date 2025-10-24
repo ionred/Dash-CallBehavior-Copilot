@@ -3,13 +3,11 @@ import dash
 import dash_bootstrap_components as dbc
 from app.components.layout import create_main_layout
 
-# Initialize the Dash app with Bootstrap theme
+# Initialize the Dash app
+# CSS files in app/assets/ folder will be automatically loaded by Dash
+# No external CDN dependencies - all assets are local
 app = dash.Dash(
     __name__,
-    external_stylesheets=[
-        dbc.themes.BOOTSTRAP,
-        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    ],
     suppress_callback_exceptions=True
 )
 
